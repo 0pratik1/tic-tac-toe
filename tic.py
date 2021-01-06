@@ -132,27 +132,19 @@ while(winning() or k==0):
         l1.append(m)
         insert_move(2 * m - 2)
         k=k+1
-    # display()
-
-
+    if(k==9):
+        print("MATCH DRAW,TRY AGAIN")
+        break
+    
     o=computer_input()
     l1.append(o)
     insert_comp(2 * o - 2)
     display()
     k = k + 1
-    # o = random.randint(1, 9)
-    # if(l1.count(o)==0):
-    #     l1.append(o)
-    #     insert_comp(2*o-2)
-    #     display()
-    # else:
-    #     o=random.randint(1,9)
-    #     l1.append(o)
-    #     insert_comp(2 * o - 2)
-    #     display()
-    if(k==9):
-        print("MATCH DRAW,TRY AGAIN")
-        break
+    
+   
+   
+    
 
 
 
